@@ -12,8 +12,8 @@ namespace AutomatingLinkedIn.Credentials
     {
         public string email = "";
         public string password = "";
-      //  public string Gemail = "";
-        //public string Gpassword = "";
+        public string Gemail = "";
+        public string Gpassword = "";
         public string json = "";
 
         public CredentialsData()
@@ -27,8 +27,8 @@ namespace AutomatingLinkedIn.Credentials
             Console.WriteLine("Array:" + array["email"]);
             email = array["email"];
             password = array["password"];
-           // Gemail = array["Gemail"];
-           // Gpassword = array["Gpassword"];
+            Gemail = array["Gemail"];
+            Gpassword = array["Gpassword"];
         }
     }
 }

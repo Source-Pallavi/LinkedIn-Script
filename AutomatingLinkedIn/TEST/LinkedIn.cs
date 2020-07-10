@@ -16,12 +16,14 @@ using System.Threading.Tasks;
 
 namespace AutomatingLinkedIn.Ilistner_ScreenShot
 {
-  public  class LinkedIn
+    [TestFixture("chrome")]
+    [TestFixture("firefox")]
+    [Parallelizable]
+    public  class LinkedIn
     {
         IWebDriver driver;
        ExtentReports report = null;
          ExtentTest _test=null;
-         ExtentReports _extent;
 
 
         [OneTimeSetUp]
@@ -32,11 +34,8 @@ namespace AutomatingLinkedIn.Ilistner_ScreenShot
             driver.Manage().Window.Maximize();
             report = new ExtentReports();
            var htmlReporter = new ExtentHtmlReporter(@"C:\Users\rebel\source\repos\QuantityMesurement\AutomatingLinkedIn\AutomatingLinkedIn\Report\extent.html");
-        //    htmlReporter.Configuration().Theme = AventStack.ExtentReports.Reporter.Configuration.Theme.Dark;
            report.AttachReporter(htmlReporter);
-            //  htmlReporter.OnTestStarted("")
-        // _test = _extent.CreateTest(TestContext.CurrentContext.Test.Name);
-
+      
 
         }
 
