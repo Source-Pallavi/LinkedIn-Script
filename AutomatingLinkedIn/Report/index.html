@@ -15,7 +15,7 @@
 
 
 
-<body class="test-view bdd-report standard">
+<body class="test-view  standard">
     <div class="app header-dark side-nav-folded">
         <div class="layout">
             <div class="header navbar">
@@ -53,7 +53,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">7/10/2020 11:45:15 AM</span>
+                    <span class="badge badge-primary">7/13/2020 12:49:32 AM</span>
                 </a>
             </li>
         </ul>
@@ -108,7 +108,7 @@
 											<i class="fa fa-exclamation-circle"></i>
 										</a>
 										<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a status="pass" class="dropdown-item" href="#"><span>Pass</span><span class="status success pull-right"></span></a>																																																																		<div class="dropdown-divider"></div>
+											<a status="fail" class="dropdown-item" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>																																																							<div class="dropdown-divider"></div>
 											<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 										</ul>
 									</li>
@@ -116,104 +116,91 @@
                             </div>
                             <div class="test-list-wrapper scrollable">
                                 <ul class="test-list-item">
-										<li class="test-item" status="pass" author="" device="" tag=""> 
-											<div class="status-avatar pass-bg">
-												<i class="fa fa-check text-white"></i>
+										<li class="test-item" status="fail" author="" device="" tag=""> 
+											<div class="status-avatar fail-bg">
+												<i class="fa fa-times text-white"></i>
 											</div>
 											<div class="open-test">
 												<div class="test-detail"> 
 													<p class="name">LoginTest</p> 
 													<p class="duration text-sm">0h:0m:0s+000ms</p> 
-													<span class="datetime">11:45:15 AM</span>
+													<span class="datetime">00:50:18 AM</span>
 												</div>
 											</div>
 											<div class="test-contents d-none">
 												<div class="detail-head">
 													<div class="p-v-10 d-inline-block">	
 														<div class="info">
-															<h5 class="test-status text-pass">LoginTest</h5>
-															<span class='badge badge-success'>7/10/2020 11:45:15 AM</span>
-															<span class='badge badge-danger'>7/10/2020 11:45:15 AM</span>
+															<h5 class="test-status text-fail">LoginTest</h5>
+															<span class='badge badge-success'>7/13/2020 12:50:18 AM</span>
+															<span class='badge badge-danger'>7/13/2020 12:50:18 AM</span>
 															<span class='badge badge-default'>0h:0m:0s+000ms</span>
 														</div>
 																											</div>
 												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>00:50:18</td>
+				<td>
+Test ended with Fail – System.IO.IOException : The process cannot access the file 'C:\Users\rebel\source\repos\QuantityMesurement\AutomatingLinkedIn\AutomatingLinkedIn\ScreenShot\7_13_2020 12_50_06 AM.png' because it is being used by another process.									</td>
+			</tr>
+	</tbody>
+</table>
 
+</div>    
 											</div>
 										</li>
-										<li class="test-item" status="pass" author="" device="" tag=""> 
-											<div class="status-avatar pass-bg">
-												<i class="fa fa-check text-white"></i>
-											</div>
-											<div class="open-test">
-												<div class="test-detail"> 
-													<p class="name">LoginTest</p> 
-													<p class="duration text-sm">0h:0m:0s+001ms</p> 
-													<span class="datetime">11:45:33 AM</span>
-												</div>
-											</div>
-											<div class="test-contents d-none">
-												<div class="detail-head">
-													<div class="p-v-10 d-inline-block">	
-														<div class="info">
-															<h5 class="test-status text-pass">LoginTest</h5>
-															<span class='badge badge-success'>7/10/2020 11:45:33 AM</span>
-															<span class='badge badge-danger'>7/10/2020 11:45:33 AM</span>
-															<span class='badge badge-default'>0h:0m:0s+001ms</span>
-														</div>
-																											</div>
-												</div>
-
-											</div>
-										</li>
-										<li class="test-item" status="pass" author="" device="" tag=""> 
-											<div class="status-avatar pass-bg">
-												<i class="fa fa-check text-white"></i>
-											</div>
-											<div class="open-test">
-												<div class="test-detail"> 
-													<p class="name">LogOutTest</p> 
-													<p class="duration text-sm">0h:0m:14s+523ms</p> 
-													<span class="datetime">11:45:38 AM</span>
-												</div>
-											</div>
-											<div class="test-contents d-none">
-												<div class="detail-head">
-													<div class="p-v-10 d-inline-block">	
-														<div class="info">
-															<h5 class="test-status text-pass">LogOutTest</h5>
-															<span class='badge badge-success'>7/10/2020 11:45:38 AM</span>
-															<span class='badge badge-danger'>7/10/2020 11:45:52 AM</span>
-															<span class='badge badge-default'>0h:0m:14s+523ms</span>
-														</div>
-																											</div>
-												</div>
-
-											</div>
-										</li>
-										<li class="test-item" status="pass" author="" device="" tag=""> 
-											<div class="status-avatar pass-bg">
-												<i class="fa fa-check text-white"></i>
+										<li class="test-item" status="fail" author="" device="" tag=""> 
+											<div class="status-avatar fail-bg">
+												<i class="fa fa-times text-white"></i>
 											</div>
 											<div class="open-test">
 												<div class="test-detail"> 
 													<p class="name">LogOutTest</p> 
 													<p class="duration text-sm">0h:0m:0s+000ms</p> 
-													<span class="datetime">11:45:52 AM</span>
+													<span class="datetime">00:53:27 AM</span>
 												</div>
 											</div>
 											<div class="test-contents d-none">
 												<div class="detail-head">
 													<div class="p-v-10 d-inline-block">	
 														<div class="info">
-															<h5 class="test-status text-pass">LogOutTest</h5>
-															<span class='badge badge-success'>7/10/2020 11:45:52 AM</span>
-															<span class='badge badge-danger'>7/10/2020 11:45:52 AM</span>
+															<h5 class="test-status text-fail">LogOutTest</h5>
+															<span class='badge badge-success'>7/13/2020 12:53:27 AM</span>
+															<span class='badge badge-danger'>7/13/2020 12:53:27 AM</span>
 															<span class='badge badge-default'>0h:0m:0s+000ms</span>
 														</div>
 																											</div>
 												</div>
+<div class="detail-body mt-4">												
+	
+<table class="table table-sm">
+	<thead><tr>
+		<th class="status-col">Status</th>
+		<th class="timestamp-col">Timestamp</th>
+		<th class="details-col">Details</th>
+	</tr></thead>
+	<tbody>
+			<tr class="event-row">
+				<td><i class="fa fa-times text-fail"></i></td>
+				<td>00:53:27</td>
+				<td>
+Test ended with Fail – OpenQA.Selenium.WebDriverException : chrome not reachable
+  (Session info: chrome=83.0.4103.116)									</td>
+			</tr>
+	</tbody>
+</table>
 
+</div>    
 											</div>
 										</li>
                                 </ul>    

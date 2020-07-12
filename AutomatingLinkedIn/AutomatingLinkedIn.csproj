@@ -98,6 +98,7 @@
     <Compile Include="Ilistner_ScreenShot\Ilistiner.cs" />
     <Compile Include="Intialization\BaseClass.cs" />
     <Compile Include="Intialization\BrowserFactory.cs" />
+    <Compile Include="Parallel Session\AutomationBase.cs" />
     <Compile Include="Parallel Session\Parrallel.cs" />
     <Compile Include="Report\Email.cs" />
     <Compile Include="TEST\LinkedIn.cs" />
@@ -112,8 +113,46 @@
     <Content Include="Report\dashboard.html" />
     <Content Include="Report\Ilistner_ScreenShot7_9_20201_22_17PM.png" />
     <Content Include="Report\index.html" />
+    <Content Include="ScreenShot\7_10_2020 10_25_08 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_27_57 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_30_26 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_33_45 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_35_40 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_39_07 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_43_07 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_49_13 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_53_05 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_55_19 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 10_59_59 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_12_16 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_14_40 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_17_39 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_20_01 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_22_24 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_36_53 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_38_01 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_39_40 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_41_37 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 11_45_32 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 4_11_18 PM.png" />
+    <Content Include="ScreenShot\7_10_2020 8_42_03 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 8_44_47 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 8_47_56 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 8_49_09 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 8_50_54 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 8_52_49 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 8_55_08 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 8_57_25 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 9_01_38 AM.png" />
+    <Content Include="ScreenShot\7_10_2020 9_06_33 AM.png" />
+    <Content Include="ScreenShot\7_12_2020 7_56_39 PM.png" />
+    <Content Include="ScreenShot\7_12_2020 7_58_44 PM.png" />
     <Content Include="ScreenShot\7_9_2020 4_02_58 PM.png" />
     <Content Include="ScreenShot\7_9_2020 4_04_01 PM.png" />
+    <Content Include="ScreenShot\7_9_2020 4_07_32 PM.png" />
+    <Content Include="ScreenShot\7_9_2020 4_13_00 PM.png" />
+    <Content Include="ScreenShot\7_9_2020 4_32_05 PM.png" />
+    <Content Include="ScreenShot\7_9_2020 4_35_59 PM.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -126,8 +165,10 @@
     <Error Condition="!Exists('..\packages\Microsoft.CodeCoverage.16.6.1\build\netstandard1.0\Microsoft.CodeCoverage.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeCoverage.16.6.1\build\netstandard1.0\Microsoft.CodeCoverage.targets'))" />
     <Error Condition="!Exists('..\packages\Selenium.WebDriver.ChromeDriver.83.0.4103.3910\build\Selenium.WebDriver.ChromeDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.ChromeDriver.83.0.4103.3910\build\Selenium.WebDriver.ChromeDriver.targets'))" />
     <Error Condition="!Exists('..\packages\Selenium.Firefox.WebDriver.0.26.0\build\Selenium.Firefox.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Firefox.WebDriver.0.26.0\build\Selenium.Firefox.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.InternetExplorer.WebDriver.3.150.1\build\Selenium.InternetExplorer.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.InternetExplorer.WebDriver.3.150.1\build\Selenium.InternetExplorer.WebDriver.targets'))" />
   </Target>
   <Import Project="..\packages\Microsoft.CodeCoverage.16.6.1\build\netstandard1.0\Microsoft.CodeCoverage.targets" Condition="Exists('..\packages\Microsoft.CodeCoverage.16.6.1\build\netstandard1.0\Microsoft.CodeCoverage.targets')" />
   <Import Project="..\packages\Selenium.WebDriver.ChromeDriver.83.0.4103.3910\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.ChromeDriver.83.0.4103.3910\build\Selenium.WebDriver.ChromeDriver.targets')" />
   <Import Project="..\packages\Selenium.Firefox.WebDriver.0.26.0\build\Selenium.Firefox.WebDriver.targets" Condition="Exists('..\packages\Selenium.Firefox.WebDriver.0.26.0\build\Selenium.Firefox.WebDriver.targets')" />
+  <Import Project="..\packages\Selenium.InternetExplorer.WebDriver.3.150.1\build\Selenium.InternetExplorer.WebDriver.targets" Condition="Exists('..\packages\Selenium.InternetExplorer.WebDriver.3.150.1\build\Selenium.InternetExplorer.WebDriver.targets')" />
 </Project>
