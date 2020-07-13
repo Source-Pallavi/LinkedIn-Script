@@ -100,6 +100,7 @@
     <Compile Include="Intialization\BrowserFactory.cs" />
     <Compile Include="Parallel Session\AutomationBase.cs" />
     <Compile Include="Parallel Session\Parrallel.cs" />
+    <Compile Include="PostArticle\Article.cs" />
     <Compile Include="Report\Email.cs" />
     <Compile Include="TEST\LinkedIn.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

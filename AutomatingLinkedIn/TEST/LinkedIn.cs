@@ -1,6 +1,7 @@
 ﻿using AutomatingLinkedIn.Base_Class;
 using AutomatingLinkedIn.Intialization;
 using AutomatingLinkedIn.Parallel_Session;
+using AutomatingLinkedIn.PostArticle;
 using AutomatingLinkedIn.Report;
 using AventStack.ExtentReports;
 using AventStack.ExtentReports.Gherkin.Model;
@@ -50,14 +51,9 @@ namespace AutomatingLinkedIn.Ilistner_ScreenShot
         public LinkedIn(string browserName)
         {
            driver= StartBrowser("firefox");
-            driver = StartBrowser("chrome");
-            //   driver.Url = "https://www.linkedin.com/login";
-            //  driver.Manage().Window.Maximize();
             report = new ExtentReports();
             var htmlReporter = new ExtentHtmlReporter(@"C:\Users\rebel\source\repos\QuantityMesurement\AutomatingLinkedIn\AutomatingLinkedIn\Report\extent.html");
             report.AttachReporter(htmlReporter);
-
-
         }
 
         [Test, Order(1)]
@@ -75,8 +71,14 @@ namespace AutomatingLinkedIn.Ilistner_ScreenShot
             Email email = new Email();
 
         }
-        
-        [Test, Order(2)]
+      /*  [Test, Order(2)]
+        public void PostArticle()
+        {
+            Article postArticle = new Article(driver);
+            postArticle.CreatePost();
+        }
+      */
+            [Test, Order(2)]
         public void LogOutTest()
         {
             HomePage page = new HomePage(driver);
